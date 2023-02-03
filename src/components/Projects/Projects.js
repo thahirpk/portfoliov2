@@ -1,13 +1,18 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
+import BlogCard from "./BlogsCards";
 import Particle from "../Particle";
+import "../../style.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
+import emotion from "../../Assets/Projects/emotion.jpeg";
 import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
+import eeg from "../../Assets/Projects/eeg.gif";
 import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import algo from "../../Assets/Projects/algo.png";
+import plant from "../../Assets/Projects/plant.jpeg";
 
 function Projects() {
   return (
@@ -23,23 +28,11 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={leaf}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Implemention of CI / CD Pipeline"
+              description="In this project our objective is to create a CI CD (Continuous Integration Continuous Deployment ) pipeline in AWS cloud infrastructure. Here we use Git as a version control system for managing code of our application. After coding we upload our code to a source code management system called GitHub. From there we take our code and test the code for any errors.This is achieved by continuous integration server called Jenkins.After testing we will give feedback to the developer. This is continuous integration section in a nutshell. Now we have to create an image file using the compiled code file.For this we have to use Docker."
+              link="#"
             />
           </Col>
 
@@ -47,21 +40,9 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Web hosting using a 3-Tier Architecture"
+              description="To keep up with the pace of change required to deliver a compelling software product and to leverage emerging technologies, a three-tier architecture provides numerous benefits. It allows a developer the opportunity to extend, modularize, and be able to configure their application. The architecture shortens time to market and reduces the cost to integrate new features into software as a service (SaaS), Cloud, and on-premise applications."
+              link="#"
             />
           </Col>
 
@@ -69,10 +50,9 @@ function Projects() {
             <ProjectCard
               imgPath={suicide}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Web Hosting using Multi-Tier Architecture"
+              description="Our aim of the project is to solve a Multi-Tier Architecture which should be highly available, fault tolerance and scalable. We solve this using various services of AWS. For solving this architecture we use a private network called VPC (Virtual Private Network). Here we need a VPC with Private and Public subnets. After that create an Internet Gateway and attach it to the VPC to access public internet."
+              link="#"
             />
           </Col>
 
@@ -80,14 +60,25 @@ function Projects() {
             <ProjectCard
               imgPath={emotion}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="VPC Implementation Using  Terraform and  Deployment on Different Cloud  Providers"
+              description="I’m going to create a VPC,  public subnet, Internet gateway,  security group and  EC2. In addition, I need to create Custom Route Tables and associate them with subnets. All this infrastructure will be in create an AWS (or GCP, Azure)i will be creating a complete infrastructure in a secont using Terraform code which can run your whole application. "
+              link="#"
             />
           </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={eeg}
+              isBlog={false}
+              title="Implementation of VPN Tunnel"
+              description="In this project, you will learn how to Implementation of VPN tunnel between a VPC in AWS and virtual network in Azure. For a secured communication across the internet we go with VPN. Two offices can communicate through internet. But since the internet is a public media, there is no security for the data. In order to provide security, we can configure VPN gateway at both ends."
+              link="#"
+            />
+          </Col>
+          
+
         </Row>
+        
       </Container>
     </Container>
   );

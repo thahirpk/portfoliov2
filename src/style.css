@@ -18,10 +18,6 @@ html {
   color: var(--imp-text-color) !important;
 }
 
-button:focus {
-  box-shadow: none !important;
-}
-
 /* --------- */
 /*  Preloader */
 /* --------- */
@@ -76,7 +72,7 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #1b1a2ea9 !important;
+  background-color: #212038d8 !important;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
@@ -90,6 +86,7 @@ button:focus {
 }
 
 .navbar-toggler {
+  padding: 0.25rem 1.5rem !important;
   position: relative !important;
   background-color: transparent !important;
   border-color: transparent !important;
@@ -357,7 +354,7 @@ button:focus {
   height: 40px !important;
   text-align: center !important;
   font-size: 1.2em !important;
-  line-height: 2em !important;
+  line-height: 43px !important;
   background: rgba(255, 255, 255, 0.972) !important;
   border-radius: 50% !important;
   transition: 0.5s !important;
@@ -412,7 +409,6 @@ button:focus {
 }
 
 .footer-body {
-  z-index: 1;
   text-align: center !important;
 }
 
@@ -553,7 +549,6 @@ button:focus {
 .tech-icons {
   font-size: 4.5em !important;
   margin: 15px !important;
-  padding: 10px !important;
   opacity: 0.93 !important;
   border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
   vertical-align: middle !important;
@@ -601,7 +596,6 @@ button:focus {
 /* --------- */
 /* Resume */
 /* --------- */
-
 .resume-section {
   position: relative !important;
   padding-top: 110px !important;
@@ -611,9 +605,8 @@ button:focus {
 }
 
 .resume {
-  padding-top: 50px;
+  padding-top: 10px;
   padding-bottom: 50px;
-  justify-content: center;
 }
 
 .resume-left {

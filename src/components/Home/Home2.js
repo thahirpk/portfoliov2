@@ -1,13 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
+import "../../style.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
   return (
@@ -19,37 +15,24 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with Linux and DevOps I have at least learnt
-              something, I think… 🤷‍♂️
+            I believe that technology is used to help people and improve their quality of life. As taking my passion into career, I'm focusing on to work with those environments, where my passion meets the opportunities and go ahead with an ever-learning attitude towards the technology., I think… 🤷‍♂️
               <br />
               <br />I am fluent in classics like
               <i>
-                <b className="purple"> AWS, Linux and Azure, Docker, Jenkins, Kubernetes. </b>
+                <b className="purple"> AWS, GCP and AZURE, Linux . </b>
               </i>
               <br />
               <br />
-               &nbsp;
+              My current focus is on &nbsp;
               <i>
-                <b className="purple">I believe that technology is used to help people and improve their quality of life. As taking my passion into career, I'm focusing on to work with those environments, where my passion meets the opportunities and go ahead with an ever-learning attitude towards the technology </b> 
-                {" "}
                 <b className="purple">
-                .
+                  Devops and Terraform.
                 </b>
               </i>
               <br />
               <br />
               
-              <b className="purple"></b> 
-              <i>
-                <b className="purple">
-                  {" "}
-                  
-                </b>
-              </i>
-              &nbsp;
-              <i>
-                <b className="purple"> </b>
-              </i>
+              
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -67,42 +50,42 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="#"
+                  href="https://github.com/thahirpk"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <AiFillGithub />
+                  <i className="fab fa-github"></i>
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="#"
+                  href="https://twitter.com/Soumyajit4419"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <AiOutlineTwitter />
+                  <i className="fab fa-twitter"></i>
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/soumyajit4419/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <FaLinkedinIn />
+                  <i className="fab fa-linkedin-in"></i>
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="#"
+                  href="https://www.instagram.com/s.o.u.m.y.a_j.i.t/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <AiFillInstagram />
+                  <i className="fab fa-instagram"></i>
                 </a>
               </li>
             </ul>
