@@ -1,10 +1,9 @@
 import React from "react";
-import Particles from "react-tsparticles";
+import Particles from "react-particles-js";
 
 function Particle() {
   return (
     <Particles
-      id="tsparticles"
       params={{
         particles: {
           number: {
